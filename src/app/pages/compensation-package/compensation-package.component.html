@@ -1,0 +1,219 @@
+<div class="container main-container">
+    <form action="">
+        <div class="sectionHeader">
+            <h4>PERSONAL INFORMATION</h4>
+        </div>
+        <div class="form-group row">
+            <label for="fullName" class="col-sm-2 col-form-label">Full Name:</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" name="fullName" id="fullName">
+            </div>
+            <label for="dateOfBirth" class="col-sm-2 col-form-label">Date Of Birth:</label>
+            <div class="col-sm-3">
+                <input type="date" class="form-control" name="dateOfBirth" id="dateOfBirth">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="nationalities" class="col-sm-2 col-form-label">Nationalities:</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" name="nationalities" id="nationalities">
+            </div>
+            <label for="age" class="col-sm-2 col-form-label">Age:</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" name="age" id="age">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="maritalStatus" class="col-sm-2 col-form-label">Marital Status:</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" name="maritalStatus" id="maritalStatus">
+            </div>
+            <label for="children" class="col-sm-2 col-form-label">Children:</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="children" id="children">
+            </div>
+        </div>
+        <div class="sectionHeader">
+            <h4>ACTUAL COMPENSATION (or last position)</h4>
+            <h5>Base Salary (in mexican pesos)</h5>
+        </div>
+        <div class="form-group row">
+            <label for="baseSalaryMontly" class="col-sm-2 col-form-label">Montly:</label>
+            <label class="col-sm-1 col-form-label text-right">$</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" name="baseSalaryMontly" id="baseSalaryMontly">
+            </div>
+            <label for="baseSalaryYearly" class="col-sm-2 col-form-label">Yearly:</label>
+            <label class="col-sm-1 col-form-label text-right">$</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control-plaintext" name="baseSalaryYearly" id="baseSalaryYearly" readonly value="0.00" readonly>
+            </div>
+        </div>
+        <div class="sectionHeader">
+            <h5>Guaranteed Benefits</h5>
+        </div>
+        <div class="form-group row">
+            <label for="christmasBonus" class="col-sm-2 col-form-label">Christmas bonus:</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" name="christmasBonus" id="christmasBonus">
+            </div>
+            <label class="col-sm-1 col-form-label">days</label>
+            <label for="christmasBonusAmount" class="col-sm-1 col-form-label text-right">$</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control-plaintext" name="christmasBonusAmount" id="christmasBonusAmount" value="0.00" readonly>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="vacationPay" class="col-sm-2 col-form-label">Vacation pay:</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" name="vacationPay" id="vacationPay">
+            </div>
+            <label class="col-sm-1 col-form-label">%</label>
+            <label for="vacationPayAmount" class="col-sm-1 col-form-label text-right">$</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control-plaintext" name="vacationPayAmount" id="vacationPayAmount" value="0.00" readonly>
+            </div>
+            <label for="numberOfVacations" class="col-sm-3 col-form-label">Number of vacations:</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" name="numberOfVacations" id="numberOfVacations">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="savingsFund" class="col-sm-2 col-form-label">Savings fund:</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" name="savingsFund" id="savingsFund">
+            </div>
+            <label class="col-sm-1 col-form-label">$</label>
+            <label for="savingsFundAmount" class="col-sm-1 col-form-label text-right">$</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control-plaintext" name="savingsFundAmount" id="savingsFundAmount" value="0.00" readonly>
+            </div>
+            <label for="savingsFundStatutoryCap" class="col-sm-3 col-form-label">With or without statutory cap:</label>
+            <div class="col-sm-2">
+                <select class="form-control" name="savingsFundStatutoryCap" id="savingsFundStatutoryCap">
+                    <option value="0" selected>Without</option>
+                    <option value="1">With</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="foodVouchers" class="col-sm-2 col-form-label">Food vouchers:</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" name="foodVouchers" id="foodVouchers">
+            </div>
+            <label class="col-sm-1 col-form-label">$</label>
+            <label for="foodVouchersAnnual" class="col-sm-1 col-form-label text-right">$</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control-plaintext" name="foodVouchersAnnual" id="foodVouchersAnnual" value="0.00" readonly>
+            </div>
+            <label for="foodVouchersStatutoryCap" class="col-sm-3 col-form-label">With or without statutory cap:</label>
+            <div class="col-sm-2">
+                <select class="form-control" name="foodVouchersStatutoryCap" id="foodVouchersStatutoryCap">
+                    <option value="0" selected>Without</option>
+                    <option value="1">With</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="restaurantVouchers" class="col-sm-2 col-form-label">Restaurant vouchers:</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" name="restaurantVouchers" id="restaurantVouchers">
+            </div>
+            <label class="col-sm-1 col-form-label">$</label>
+            <label for="restaurantVouchersAnnual" class="col-sm-1 col-form-label text-right">$</label>
+            <div class="col-sm-1">
+                <input type="number" class="form-control-plaintext" name="restaurantVouchersAnnual" id="restaurantVouchersAnnual" value="0.00" readonly>
+            </div>
+            <label for="subsidizedCanteen" class="col-sm-3 col-form-label">Subsidized canteen:</label>
+            <div class="col-sm-2">
+                <select class="form-control" name="subsidizedCanteen" id="subsidizedCanteen">
+                    <option value="0" selected>No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+        </div>
+        <div class="sectionHeader">
+            <h5>Non-Guaranteed Benefits</h5>
+        </div>
+        <div class="form-group row">
+            <label for="bonus1" class="col-sm-2 col-form-label">Bonus 1:</label>
+            <div class="col-sm-2">
+                <select class="form-control" name="bonus1" id="bonus1">
+                    <option value="1" selected>Monthly</option>
+                    <option value="2">Trimester</option>
+                    <option value="3">Semester</option>
+                    <option value="4">Annual</option>
+                </select>
+            </div>
+            <label for="bonus1Amount" class="col-sm-1 col-form-label text-right">$</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" name="bonus1Amount" id="bonus1Amount" placeholder="Average annual amount">
+            </div>
+            <label for="bonus1Date" class="col-sm-1"></label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="bonus1Date" id="bonus1Date" placeholder="Payment date [months]">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="bonus2" class="col-sm-2 col-form-label">Bonus 2:</label>
+            <div class="col-sm-2">
+                <select class="form-control" name="bonus2" id="bonus2">
+                    <option value="1" selected>Monthly</option>
+                    <option value="2">Trimester</option>
+                    <option value="3">Semester</option>
+                    <option value="4">Annual</option>
+                </select>
+            </div>
+            <label for="bonus2Amount" class="col-sm-1 col-form-label text-right">$</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" name="bonus2Amount" id="bonus2Amount" placeholder="Average annual amount">
+            </div>
+            <label for="bonus2Date" class="col-sm-1"></label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="bonus2Date" id="bonus2Date" placeholder="Payment date [months]">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="bonus3" class="col-sm-2 col-form-label">Bonus 3:</label>
+            <div class="col-sm-2">
+                <select class="form-control" name="bonus3" id="bonus3">
+                    <option value="1" selected>Monthly</option>
+                    <option value="2">Trimester</option>
+                    <option value="3">Semester</option>
+                    <option value="4">Annual</option>
+                </select>
+            </div>
+            <label for="bonus3Amount" class="col-sm-1 col-form-label text-right">$</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" name="bonus3Amount" id="bonus3Amount" placeholder="Average annual amount">
+            </div>
+            <label for="bonus3Date" class="col-sm-1"></label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="bonus3Date" id="bonus3Date" placeholder="Payment date [months]">
+            </div>
+        </div>
+        <div class="sectionHeader">
+            <h5>Total Yearly</h5>
+        </div>
+        <div class="form-group row">
+            <label for="totalBaseSalary" class="col-sm-3 col-form-label text-right">Base salary: $</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control-plaintext" name="totalBaseSalary" id="totalBaseSalary" value="0.00" readonly>
+            </div>
+            <label for="totalBonus" class="col-sm-3 col-form-label text-right">Total bonus: $</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control-plaintext" name="totalBonus" id="totalBonus" value="0.00" readonly>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="totalBenefits" class="col-sm-3 col-form-label text-right">Total benefits: $</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control-plaintext" name="totalBenefits" id="totalBenefits" value="0.00" readonly>
+            </div>
+            <label for="annualIntegratedCompensation" class="col-sm-3 col-form-label text-right">Annual integrated compensation: $</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control-plaintext" name="annualIntegratedCompensation" id="annualIntegratedCompensation" value="0.00" readonly>
+            </div>
+        </div>
+    </form>
+</div>
